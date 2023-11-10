@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+
+head,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+}
+
+/* navigation_content */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+ .nav_bar{
+    font-size: 32px;
+} 
+
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-top: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+}
+
+/* hero_section */
+
+.hero_section{
+    padding-top: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.tag{
+    background-color: #149f39;
+    align-self: flex-start;
+    padding: 5px 10px;
+    color: white;
+}
+
+.hero_content h1{
+    max-width: 600px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.hero_content{
+        display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 5px 10px ;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.hero_button{
+   background-color: rgba(227, 227, 32, 0.822);
+   font-size: 20px;
+   padding: 0 5px;
+   align-self: flex-start;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    color:lightgreen;
+    color: red;
+}
+
+
+
+/* vouchers */
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.feature img{
+    width: 72px;
+}
+.feature:hover{
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.05);
+   transform: scale(1.04);
+}
+
+/* menu and grid section  */
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+}
+.menu h2{
+    align-self: center;
+    font-size: 45px;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7" ;
+}
+.item1{
+    grid-area:I1 ;
+}
+.item2{
+    grid-area:I2 ;
+}
+.item3{
+    grid-area:I3 ;
+}
+.item4{
+    grid-area:I4 ;
+}
+.item5{
+    grid-area:I5 ;
+}
+.item6{
+    grid-area:I6 ;
+}
+.item7{
+    grid-area:I7 ;
+}
+.grid_image:hover{
+    transform: scale(1.04);
+    transition:0.2s ease-in-out;
+}
+
+.grid_image{
+    border-radius: 15px;
+    transition:0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer  */
+.footer{
+    padding: 30px;
+    background-color: sandybrown;
+    justify-content: space-between;
+
+}
+.footc{
+    display:flex;
+    padding-top: 30px;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+} 
+.footc h3{
+    font-weight: 2000;
+    margin-bottom: 10px;
+}
+.icon_container{
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    list-style: none;
+}
+.join .mail{
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right:2px ;
+    margin-bottom: 5px;
+}
+.icon_container .icon{
+    font-size: 22px;
+}
+@media (max-width:788px) {
+    .hero_section{
+        flex-direction: column;
+    }
+    .hero_image{
+        width: 90%;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .grid{
+        padding: 10px;
+    }
+    .grid_image{
+        border-radius: 0px;
+    }
+    
+    .footc{
+       flex-direction: column;
+    }
+    .footc .support{
+        margin-left: 12px;
+    }
+    .footc .join{
+        margin-left: 35px;
+    }
+    
+}
+@media (max-width:830px){
+    .join .mail{
+        align-self: flex-start;
+    }
+}
